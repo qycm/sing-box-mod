@@ -56,6 +56,7 @@ require (
 )
 
 //replace github.com/sagernet/sing => ../sing
+replace github.com/sagernet/sing-quic => github.com/qycm/sing-quic v0.5.2-deviceid
 
 require (
 	filippo.io/edwards25519 v1.1.0 // indirect

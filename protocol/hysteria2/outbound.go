@@ -77,6 +77,7 @@ func NewOutbound(ctx context.Context, router adapter.Router, logger log.ContextL
 		ReceiveBPS:         uint64(options.DownMbps * hysteria.MbpsToBps),
 		SalamanderPassword: salamanderPassword,
 		Password:           options.Password,
+		DeviceID:           options.DeviceID,
 		TLSConfig:          tlsConfig,
 		UDPDisabled:        !common.Contains(networkList, N.NetworkUDP),
 	})

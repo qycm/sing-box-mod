@@ -118,6 +118,7 @@ type Hysteria2OutboundOptions struct {
 	DownMbps    int                        `json:"down_mbps,omitempty"`
 	Obfs        *Hysteria2Obfs             `json:"obfs,omitempty"`
 	Password    string                     `json:"password,omitempty"`
+	DeviceID    string                     `json:"device_id,omitempty"`
 	Network     NetworkList                `json:"network,omitempty"`
 	OutboundTLSOptionsContainer
 	BrutalDebug bool `json:"brutal_debug,omitempty"`
