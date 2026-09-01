@@ -35,10 +35,10 @@ jobs:
         run: |-
           echo "version=${{ inputs.version }}"
           echo "version=${{ inputs.version }}" >> "$GITHUB_ENV"
-      - name: Calculate version
+      - name: Set push version
         if: github.event_name != 'workflow_dispatch'
         run: |-
-          go run -v ./cmd/internal/read_tag --ci --nightly
+          echo "version=1.12.19-deviceid" >> "$GITHUB_ENV"
       - name: Set outputs
         id: outputs
         run: |-
